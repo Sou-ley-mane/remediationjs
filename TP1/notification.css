@@ -1,0 +1,97 @@
+:root {
+    --success-color: #28A745;
+    --danger-color: #BD2130;
+    --warning-color: #FFC107;
+    --info-color: #17A2B8;
+    /* --primary-color: #F5F5F5; */
+}
+
+header h1 {
+    text-align: center;
+    color: wheat;
+}
+
+header {
+    background-color: black;
+    padding: 2em;
+}
+
+.contener {
+    position: fixed;
+    top: 30%;
+    left: 3%;
+    background-color: rgb(24, 20, 13);
+    max-height: 70vh;
+    /* height: 60vh; */
+    width: 70%;
+    display: flex;
+    padding: 2em;
+    box-shadow: 0.2em 0.2em 1em 1em rgb(177, 68, 95);
+}
+
+button {
+    margin: 0.5em;
+    padding: 1em;
+    border-radius: 25px;
+    font-size: 1.5em;
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: .8;
+}
+
+.btn1 {
+    background-color: var(--success-color);
+    color: #fff;
+    font-weight: bold;
+}
+
+.btn2 {
+    background-color: var(--danger-color);
+    color: #fff;
+    font-weight: bold;
+}
+
+.btn3 {
+    background-color: var(--warning-color);
+    color: #fff;
+    font-weight: bold;
+}
+
+.btn4 {
+    background-color: var(--info-color);
+    color: #fff;
+    font-weight: bold;
+}
+
+.btn5 {
+    background-color: rgb(59, 129, 18);
+    color: #fff;
+    font-weight: bold;
+    position: fixed;
+    right: 5%;
+    top: 80%;
+    border-radius: 0%;
+}
+
+.affiche {
+    position: fixed;
+    left: 80%;
+    bottom: 10%;
+    right: 20%;
+    top: 20%;
+    font-size: 1em;
+    display: flex;
+    width: 15%;
+    flex-direction: column-reverse;
+}
+
+.couleur {
+    text-align: center;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    margin: 0.3em;
+    border-radius: 15px;
+}
