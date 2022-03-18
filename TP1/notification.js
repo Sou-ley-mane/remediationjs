@@ -1,6 +1,5 @@
 // Recuperation des elemants du document HTML
 const btn = document.querySelectorAll('button');
-const notification = document.getElementById("affiche");
 const informations = document.createElement('div')
 informations.classList.add('affiche')
 btn[0].addEventListener('click', (e) => {
