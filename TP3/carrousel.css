@@ -1,0 +1,123 @@
+header {
+    background-color: aqua;
+    text-align: center;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    border: 2px solid gray;
+    margin: 10px;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.slideshow {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.conteners {
+    display: none;
+    /* position: fixed; */
+}
+
+.back,
+.forward {
+    cursor: pointer;
+    position: absolute;
+    top: 48%;
+    width: auto;
+    margin-top: -23px;
+    padding: 17px;
+    color: grey;
+    font-weight: bold;
+    font-size: 19px;
+    transition: 0.4s ease;
+    border-radius: 0 5px 5px 0;
+    user-select: none;
+}
+
+.forward {
+    right: 0;
+    border-radius: 4px 0 0 4px;
+}
+
+.back:hover,
+.forward:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.info {
+    color: #e3e3e3;
+    font-size: 16px;
+    padding: 10px 14px;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.messageInfo {
+    color: #f2f2f3;
+    font-size: 14px;
+    padding: 10px 14px;
+    position: absolute;
+    top: 0;
+}
+
+.dots {
+    cursor: pointer;
+    height: 16px;
+    width: 16px;
+    margin: 0 3px;
+    background-color: #acc;
+    border-radius: 50%;
+    display: inline-block;
+    transition: 0.5s ease;
+}
+
+.enable,
+.dots:hover {
+    background-color: #717161;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-direction: 1.4s;
+    animation-name: fade;
+    animation-duration: 1.4s;
+}
+
+
+/* fonction en css */
+
+@-webkit-keyframes fade {
+    form {
+        opacity: .5;
+    }
+    to {
+        opacity: 2;
+    }
+}
+
+@keyframes fade {
+    form {
+        opacity: .5;
+    }
+    to {
+        opacity: 2;
+    }
+}
+
+.img {
+    width: 100%;
+    /* height: 90%; */
+}
+
+.zoom {
+    transform: scale(1.3);
+    transition: 0.4s ease;
+}
