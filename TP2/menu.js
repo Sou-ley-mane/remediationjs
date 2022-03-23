@@ -222,62 +222,26 @@ function CreationMenu(iconG, txt, iconInter, iconD) {
             sousMenu.style.display = "flex"
         } else {
             sousMenu.style.display = "none"
-
         }
-        // Affiche()
-        // sous.classList.toggle('masquer')
-        // alert(e.target)
     })
 
 }
 // menu
 // bouton.addEventListener('click', () => {
-menu.forEach((objet, position) => {
+menu.forEach((objet) => {
     iconG = objet["iconG"]
     txt = objet["text"]
     iconInter = objet["iconInter"]
     iconD = objet["iconD"]
     sous = objet["sousMenu"]
-        // sous.setAttribute('class', "sousMenu")
-        // console.log((sous));
+        // ************************************************
     CreationMenu(iconG, txt, iconInter, iconD)
-        // if (sous.length != 0) {
-    Affiche()
-        // }
-        // CreationMenu(iconG, txt, iconInter, iconD)
+    if (menu.sous.length != 0) {
+        Affiche()
+    }
 
-    // if (menu.sousMenu.length != 0) {
-    //     CreationMenu(iconG, txt, iconInter, iconD)
 
-    // }
-    // **********************************************************
-    // bouton.addEventListener('click', () => {
-    // })
 
-    // function sousMenu(position) {
-    //     if (objet == menu[position]) {
-    //         sous.forEach((objet, position) => {
-    //             iconG = objet["iconG"]
-    //             txt = objet["text"]
-    //                 // console.log(txt)
-    //             iconInter = objet["iconInter"]
-    //             iconD = objet["iconD"]
-    //             CreationMenu(iconG, txt, iconInter, iconD)
-    //         })
-    //     }
-    // }
-    // **************************Evenement*****************************
-    // function AfficheSousMenu(position) {
-    //     switch (menu[position]) {
-    //         case menu[position]:
-    //             sousMenu(position)
-    //             break;
-    //         default:
-    //             break;
-    //     }
-    // }
-    // }***************************************************************
-    // AfficheSousMenu(1)
 
 })
 
@@ -300,7 +264,7 @@ toggle.addEventListener('click', () => {
 // })
 
 function Affiche() {
-    sous.forEach((objet, position) => {
+    sous.forEach((objet) => {
         iconG = objet["iconG"]
         txt = objet["text"]
         iconInter = objet["iconInter"]

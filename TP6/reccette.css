@@ -18,7 +18,7 @@
 
 .p22 {
     /* background-color: #fff; */
-    border: 4px solid rgb(38, 255, 0);
+    /* border: 4px solid rgb(38, 255, 0); */
     width: 110px;
     color: #fff;
     /* flex: 5; */
@@ -26,7 +26,7 @@
 
 .p23 {
     /* background-color: #fff; */
-    border: 4px solid rgb(190, 73, 185);
+    /* border: 4px solid rgb(190, 73, 185); */
     /* flex: 2; */
 }
 
@@ -51,7 +51,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 35px;
-    border: 2px solid #fff;
+    /* border-bottom: 2px solid #fff; */
     width: 100%;
 }
 
@@ -74,10 +74,10 @@ body {
     height: 50px;
     width: 100%;
     align-items: center;
-    margin-top: 7px;
+    margin-top: 15px;
     /* margin-right: 2rem; */
-    /* border: 1px solid grey; */
-    /* padding-bottom: 0rem; */
+    border-bottom: 1px solid grey;
+    padding-bottom: 1.5rem;
 }
 
 .logo_content .logo img {
@@ -105,6 +105,7 @@ body {
 
 .menu ul {
     margin-top: 20px;
+    /* visibility: hidden; */
 }
 
 .menu ul li {
@@ -126,8 +127,9 @@ body {
     transition: all 0.4s ease;
 }
 
-.menu ul li a:hover {
-    background-color: blue;
+.menu ul li:hover {
+    /* background-color: blue; */
+    background-color: rgba(16, 169, 240);
 }
 
 .menu ul li a i {
@@ -139,7 +141,7 @@ body {
 }
 
 input {
-    /* position: absolute; */
+    position: relative;
     height: 100%;
     width: 100%;
     left: 0;
@@ -223,4 +225,55 @@ input {
 .menu.show #input {
     display: none;
     /* visibility: hidden; */
+}
+
+.rotation {
+    transition: 0.3s ease;
+    transform: rotate(-90deg);
+}
+
+.parDefaut.masquer {
+    display: block;
+    margin-left: 15px;
+}
+
+.parDefaut {
+    display: none;
+}
+
+body .exemple {
+    position: fixed;
+    top: 95%;
+    font-size: 1.5em;
+    color: #fff;
+}
+
+
+/* .delete {
+    display: none;
+} */
+
+.delete {
+    display: none;
+}
+
+
+/* .menu {
+    overflow-y: scroll;
+} */
+
+#toggle {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    font-size: 2em;
+    margin: 0;
+}
+
+#toggle.delete {
+    display: none;
+}
+
+.new {
+    background-color: red;
 }
