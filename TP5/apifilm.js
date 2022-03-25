@@ -8,6 +8,7 @@ const input = document.querySelector('input')
 fetch(APIURL)
     .then(function(donnees) {
         donneesEnJson = donnees.json();
+        console.log(donneesEnJson);
         return donneesEnJson;
     })
     .then(function(resultat) {
@@ -69,6 +70,8 @@ function newDiv(src, textH3, textSpan, textH33, dscription) {
     div.appendChild(sousDiv2(textH33, dscription))
     return div;
 }
+
+
 
 // ****************Recherch
 input.addEventListener('input', () => {

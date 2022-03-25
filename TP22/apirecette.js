@@ -249,7 +249,7 @@ function Affiche(div) {
 // //     alert("bonjour")
 // // })
 
-for (let i = 0; i < menu.length; i++) {
-    menu[i].classList.add("id_" + i)
+// for (let i = 0; i < menu.length; i++) {
+// menu[i].classList.add("id_" + i)
 
-}
+// }

@@ -7,12 +7,12 @@
 
 .p1 {
     /* background-color: #fff; */
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 .p2 {
     /* background-color: #fff; */
-    border: 3px solid rgb(25, 0, 255);
+    /* border: 3px solid rgb(25, 0, 255); */
     display: flex;
 }
 
@@ -275,5 +275,17 @@ body .exemple {
 }
 
 .new {
-    background-color: red;
+    font-weight: bold;
+    /* font-size: 2em; */
+    /* background-color: red; */
+}
+
+.links_name {
+    font-size: 1em;
+    width: 90%;
+    font-weight: bold;
+}
+
+.fa-angle-left {
+    font-size: 1.5em;
 }
