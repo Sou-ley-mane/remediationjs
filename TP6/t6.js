@@ -74,7 +74,7 @@ input.addEventListener("input", () => {
                     source = element.strMealThumb
                     titre = element.strMeal
                     newDiv(source, titre)
-                    main.appendChild(newDiv(source, titre))
+                    recherce.appendChild(newDiv(source, titre))
                 });
                 // source = resultat.meals[0]["strMealThumb"];
                 // titre = resultat.meals[0]["strMeal"]

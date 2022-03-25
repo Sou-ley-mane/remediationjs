@@ -1,0 +1,88 @@
+        * {
+            box-sizing: border-box;
+            margin: 0;
+        }
+        
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #a9c3c5;
+            height: 10vh;
+            /* padding: 1rem; */
+        }
+        
+        .logo {
+            height: 80px;
+            width: 100px;
+            /* border: 2px solid white;  */
+            border-radius: 10px;
+        }
+        
+        nav ul {
+            /* border: 2px solid red; */
+            width: 70vh;
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        nav ul button {
+            margin-right: 1rem;
+            font-size: 2rem;
+            background-color: rgb(42, 162, 192);
+            padding: 0.5rem 2.5rem;
+            border-radius: 15px;
+            color: white;
+        }
+        /* nav ul li a {
+    text-decoration: none;
+    background-color: rebeccapurple;
+    border: 1px solid rebeccapurple;
+    color: white;
+    border-radius: 15px;
+    padding: 1rem;
+} */
+        
+        nav ul button:hover {
+            background-color: rgb(0, 174, 255);
+        }
+        
+        section {
+            background: transparent;
+            background: url('java.png') no-repeat center;
+            height: 94%;
+            background-size: 50%;
+            /* border: 3px solid rgb(29, 11, 129); */
+            /* width: 40%; */
+        }
+        
+        .contenu {
+            /* border: 2px solid rebeccapurple; */
+            background-image: url("ORDI.jpg");
+            background-size: cover;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            padding-left: 2em;
+            background-position: center;
+        }
+        
+        .colonne {
+            /* border: 2px solid greenyellow; */
+            /* background-color: #a9c3c5; */
+            width: 15%;
+            height: 80%;
+            box-shadow: 0rem 0rem 0.5rem 0.5rem;
+            /* position: absolute; */
+            margin: 1rem;
+            /* background-image: url('java.png');
+    background-repeat: no-repeat; */
+        }
+        
+        .titre {
+            text-align: center;
+            /* border: 2px solid red; */
+            background-color: #a9c3c5;
+            font-size: 2rem;
+        }
+        /*   */
