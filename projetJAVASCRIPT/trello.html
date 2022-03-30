@@ -6,31 +6,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="trello.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>Trello</title>
 </head>
 
 <body>
     <header>
-        <img class="logo" src="java.png" alt="">
+        <img class="logo animate__animated animate__bounce " src="java.png" alt="">
         <nav>
             <ul>
-                <button class="ajoutCol">Colonne</button>
-                <button class="ajoutCol">Note</button>
-                <button class="ajoutCol">Recent</button>
-
-                <!-- <li>
-                    <a href=""></a>
-                </li>
-                <li>
-                    <a href=""></a>
-                </li>
-                <li>
-                    <a href=""></a>
-                </li> -->
+                <button class="ajoutCol"><i class="fa-solid fa-plus"></i></button>
+                <button class="ajoutModal"><i class="fa-solid fa-clipboard"></i></button>
+                <button class=""><i class="fa-solid fa-trash"></i></button>
+                <button class=""><i class="fa-solid fa-download"></i></button>
             </ul>
         </nav>
+        <img class="logo animate__animated animate__bounce " src="java.png" alt="">
     </header>
+    <div class="gestion">GESTION DE PROJET</div>
     <div class="contenu">
+        <div class="modal-confirm" id="modal-confirm">
+            <div class="confirmation" id="confirmation">
+                <div class="message">
+                    <h3>voulez vous supprimer ?</h3>
+                </div>
+                <div class="modal-button">
+                    <button id="btn1" class="buttum-modal">Non</button>
+                    <button id="btn2" class="buttum-modal supprime">Oui</button>
+
+                </div>
+            </div>
+        </div>
+        <!-- <div class="modale">
+            <div class="titreForm">
+                <h1> NOUVELLE TACHE</h1><span>X</span>
+            </div>
+            <div class="corps">
+                <p>Remplir les informations de la nouvelle tache</p>
+                <form action="">
+                    <div form-controle>
+                        <label for="">Tache</label><br>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="form-controle">
+                        <label for="">Date</label><br>
+                        <input type="date">
+                    </div>
+                    <div class="form-controle">
+                        <label for="">Heure Debut</label><br>
+                        <input type="time">
+                    </div>
+                    <div class="form-controle">
+                        <label for="">Heure Fin</label><br>
+                        <input type="time">
+                    </div>
+                    <input id="ajout" type="submit" value="Ajouter">
+
+                </form>
+            </div>
+
+        </div> -->
         <!-- <div class="colonne">
             <div class="titre">
                 Colonne 1
@@ -41,21 +78,10 @@
 
 
         </div> -->
-        <!-- ******************************************** -->
-        <!-- <div class="colonne">
-            <div class="titre">
-                Colonne 2
-            </div>
-            <section>
-
-            </section>
-
-
-        </div> -->
-
-
 
     </div>
+
+
 
     <script src="trello.js "></script>
 </body>
