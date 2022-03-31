@@ -3,6 +3,10 @@
             margin: 0;
         }
         
+        body {
+            overflow: hidden;
+        }
+        
         header {
             display: flex;
             justify-content: space-around;
@@ -68,7 +72,7 @@
             /* background-image: url("https://source.unspalsh.com/random/150*150"); */
             background-size: cover;
             width: 100%;
-            height: 100vh;
+            height: 90vh;
             display: flex;
             padding-left: 2em;
             background-position: center;
@@ -213,7 +217,12 @@
             /* background-color: #a9c3c5; */
             border: none;
             text-align: center;
-            font-size: 0.5em;
+            font-size: 0.7em;
+            width: 100%;
+        }
+        
+        .titleCol.back {
+            background-color: white;
         }
         
         .gestion {
@@ -225,7 +234,7 @@
         }
         
         .tache {
-            border: 1px solid #2c3e50;
+            /* border: 1px solid #2c3e50; */
             /* background-color: white; */
             display: flex;
             flex-direction: column;
@@ -254,19 +263,19 @@
         
         #left,
         #right {
-            font-size: 3rem;
+            font-size: 2 rem;
             cursor: pointer;
         }
         /* .deactive {
             visibility: hidden;
         } */
         
-        .colonne:first-child .flecheContent #left {
-            display: none;
+        .colonne:nth-child(4) .flecheContent #left {
+            visibility: hidden;
         }
         
         .colonne:last-child .flecheContent #right {
-            display: none;
+            visibility: hidden;
         }
         /* ****************************************************** */
         
@@ -326,20 +335,35 @@
         
         .note {
             border-bottom: 2px solid gray;
-            background-color: white;
+            /* background-color: white; */
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            font-weight: bold;
+            height: 12vh;
         }
         
         .date {
             /* border: 2px solid rebeccapurple; */
             height: 3vh;
+            background-color: tomato;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100px;
+            border-radius: 4px;
         }
         
         .tempsDebut {
-            /* border: #2c3e50 solid 2px; */
+            /* border: goldenrod solid 2px; */
             height: 3vh;
-            background-color: green;
-            color: white;
-            text-align: center;
+            background-color: greenyellow;
+            color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            border-radius: 4px;
         }
         
         .tempsFin {
@@ -347,13 +371,58 @@
             height: 3vh;
             background-color: red;
             color: white;
-            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            border-radius: 4px;
         }
         
         .info {
-            background-color: white;
+            /* background-color: white; */
+            background-color: rgba(0, 0, 0, 0.5);
             height: 4vh;
             display: flex;
             align-items: center;
             justify-content: space-evenly;
+            /* visibility: hidden; */
+            display: none;
+        }
+        
+        .info.infoDur {
+            display: flex;
+        }
+        
+        .corbeille {
+            height: 100%;
+            width: 20%;
+            background-color: rgba(0, 0, 0, 0.5);
+            /* background-color: #0072ff; */
+            position: absolute;
+            left: 0;
+            transform: translateX(500%);
+            border-right: 3px solid gray;
+            border-left: 3px solid gray;
+        }
+        
+        .corbeille.afficheCorbeille {
+            transition: all 0.5s ease;
+            transform: translateX(400%);
+        }
+        
+        .titreCorbeil {
+            color: white;
+            text-align: center;
+            font-size: 1.5em;
+            /* margin-top: 2rem;  */
+            border: 3px solid gray;
+        }
+        
+        #efface {
+            display: none;
+        }
+        
+        #efface.infoDur {
+            display: block;
+            cursor: pointer;
         }
