@@ -1,0 +1,55 @@
+.element {
+    height: 400px;
+    width: 400px;
+    background-color: red;
+    animation: pulse 3s ease infinite alternate, nudge 5s linear infinite alternate;
+    border-radius: 100%;
+    z-index: -1;
+    position: fixed;
+    left: 40%;
+    top: 40%;
+}
+
+#anim {
+    widows: 10px;
+    height: 14vh;
+    position: fixed;
+    left: 30%;
+    top: 30%;
+}
+
+@keyframes pulse {
+    0%,
+    100% {
+        background-color: white;
+    }
+    50% {
+        background-color: orange;
+    }
+}
+
+@keyframes nudge {
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(150px, 0);
+    }
+    80% {
+        transform: translate(0px, 150px);
+    }
+}
+
+
+/* html,
+body {
+    height: 100%;
+} */
+
+
+/* body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */

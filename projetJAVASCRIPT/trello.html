@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="style .css">
     <title>Trello</title>
 </head>
 
@@ -20,69 +21,41 @@
                 <button class="ajoutCol"><i class="fa-solid fa-plus"></i></button>
                 <button class="ajoutModal"><i class="fa-solid fa-clipboard"></i></button>
                 <button class="voirCorbeil"><i class="fa-solid fa-trash"></i></button>
-                <button class=""><i class="fa-solid fa-download"></i></button>
+                <button class="save  "><i class="fa-solid fa-download"></i></button>
             </ul>
         </nav>
         <img class="logo animate__animated animate__bounce " src="java.png" alt="">
     </header>
     <div class="gestion">GESTION DE PROJET</div>
     <div class="contenu">
+        <div class="element"><img id="anim" src="java.png" alt=""></div>
+
         <div class="modal-confirm" id="modal-confirm">
             <div class="confirmation" id="confirmation">
                 <div class="message">
                     <h3>voulez vous supprimer ?</h3>
                 </div>
                 <div class="modal-button">
-                    <button id="btn1" class="buttum-modal">Non</button>
-                    <button id="btn2" class="buttum-modal supprime">Oui</button>
+                    <button type="button" id="btn1" class="buttum-modal">Non</button>
+                    <button type="button" id="btn2" class="buttum-modal supprime">Oui</button>
                 </div>
             </div>
         </div>
         <!-- ********************************************************** -->
+        <div class="notification">
+            <h3 class="notifTxt">Element supprimer</h3>
+            <h4 class="notifOk">OK</h4>
+        </div>
+
         <!-- ************************************************************ -->
-        <!-- <div class="modale">
-            <div class="titreForm">
-                <h1> NOUVELLE TACHE</h1><span>X</span>
-            </div>
-            <div class="corps">
-                <p>Remplir les informations de la nouvelle tache</p>
-                <form action="">
-                    <div form-controle>
-                        <label for="">Tache</label><br>
-                        <textarea name="" id="" cols="30" rows="10"></textarea>
-                    </div>
-                    <div class="form-controle">
-                        <label for="">Date</label><br>
-                        <input type="date">
-                    </div>
-                    <div class="form-controle">
-                        <label for="">Heure Debut</label><br>
-                        <input type="time">
-                    </div>
-                    <div class="form-controle">
-                        <label for="">Heure Fin</label><br>
-                        <input type="time">
-                    </div>
-                    <input id="ajout" type="submit" value="Ajouter">
-
-                </form>
-            </div>
-
-        </div> -->
-        <!-- <div class="colonne">
-            <div class="titre">
-                Colonne 1
-            </div>
-            <section>
-
-            </section>
 
 
-        </div> -->
+
         <!-- ******************************************************** -->
         <div class="corbeille">
             <div class="titreCorbeil">
                 <h3>TACHES SUPPRIMÉS</h3>
+
             </div>
         </div>
 
@@ -91,6 +64,7 @@
 
 
     <script src="trello.js "></script>
+
 </body>
 
 </html>
